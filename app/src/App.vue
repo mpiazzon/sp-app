@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <div>
+    <h1>test</h1>
+    {{ count }}
+    <button @click="increment()">incrementar</button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import global from "./composables/global.js";
+import { toRefs, getCurrentInstance } from "vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  setup() {
+    const { state, increment } = global;
+    increment();
+    return { ...toRefs(state), increment };
+  },
+};
 </script>
