@@ -13,11 +13,14 @@ import Dialog from "primevue/dialog";
 
 import Button from "primevue/button";
 
+import Card from "primevue/card";
+
 const app = createApp(App);
 
 app.use(PrimeVue);
 
 app.component("Dialog", Dialog);
 app.component("Button", Button);
+app.component("Card", Card);
 
 app.mount("#app");

@@ -20,6 +20,13 @@
           <Button label="Delete" icon="pi pi-trash" />
           <Button label="Cancel" icon="pi pi-times" />
         </span>
+        <Button label="Primary" />
+        <Button label="Secondary" class="p-button-secondary" />
+        <Button label="Success" class="p-button-success" />
+        <Button label="Info" class="p-button-info" />
+        <Button label="Warning" class="p-button-warning" />
+        <Button label="Warning" class="p-button-help" />
+        <Button label="Danger" class="p-button-danger" />
       </div>
       <div class="p-col">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, atque sed
@@ -27,10 +34,24 @@
         molestias sapiente voluptatibus recusandae. Dignissimos, possimus aut.
       </div>
       <div class="p-col">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima
-        ex modi error nobis officia incidunt possimus, velit explicabo illum
-        unde, quae laudantium, soluta aspernatur laboriosam! Iusto voluptatibus
-        odio provident.
+        <Card>
+          <template #title> Advanced Card </template>
+          <template #content>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            sed consequuntur error repudiandae numquam deserunt quisquam
+            repellat libero asperiores earum nam nobis, culpa ratione quam
+            perferendis esse, cupiditate neque quas!
+          </template>
+          <template #footer>
+            <Button icon="pi pi-check" label="Save" />
+            <Button
+              icon="pi pi-times"
+              label="Cancel"
+              class="p-button-secondary"
+              style="margin-left: 0.5em"
+            />
+          </template>
+        </Card>
       </div>
     </div>
 
