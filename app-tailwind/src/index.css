@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  @apply flex justify-center items-center h-screen text-center;
+}
+
+h2 {
+  @apply text-9xl text-emerald-500 bg-emerald-100 p-3;
+}
