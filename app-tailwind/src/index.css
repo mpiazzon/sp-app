@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
 .box {
   @apply flex justify-center items-center h-screen text-center;
 }
 
 h2 {
-  @apply text-9xl text-emerald-500 bg-emerald-100 p-3;
+  @apply text-9xl text-emerald-400 bg-emerald-100 p-3;
 }

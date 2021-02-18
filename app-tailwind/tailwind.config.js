@@ -11,6 +11,11 @@ module.exports = {
         emerald: colors.emerald,
         gray: colors.trueGray,
         red: colors.rose,
+        blue: {
+          light: '#85d7ff',
+          DEFAULT: '#ccc',
+          dark: '#009eeb',
+        },
       },
     },
   },
