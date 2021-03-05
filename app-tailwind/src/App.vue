@@ -1,29 +1,59 @@
 <template>
   <div id="app">
     <div class="flex h-screen">
-      <div class="flex-none w-16 bg-purple-200">This item will not grow</div>
-      <div class="flex-grow h-16">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, qui
-        similique. Ipsa voluptatem, non modi necessitatibus mollitia amet
-        perspiciatis pariatur fugit dolorem enim harum sit sunt culpa doloribus.
-        Itaque, repudiandae!
+      <div class="flex-none w-48">
+        <h3 class="text-center pt-2 font-semibold">Logo</h3>
+
+        <div class="flex flex-col mt-3">
+          <a
+            href=""
+            class="border-gray-300 border-solid border-b-2 border-t-2 w-full text-center py-3"
+            >HOME</a
+          >
+          <a
+            href=""
+            class="border-gray-300 border-solid border-b-2 w-full text-center py-3"
+            >PRODUCTOS</a
+          >
+          <a
+            href=""
+            class="border-gray-300 border-solid border-b-2 w-full text-center py-3"
+            >CLIENTES</a
+          >
+          <a
+            href=""
+            class="border-gray-300 border-solid border-b-2 w-full text-center py-3"
+            >CONFIGURACION</a
+          >
+          <a href="" class="bg-gray-200 w-full text-center py-3"
+            >PROOVEEDORES</a
+          >
+        </div>
       </div>
-      <div class="flex-none w-16 h-16">This item will not grow</div>
-    </div>
-    <div class="box">
-      <h1 class="text-3xl font-bold">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil
-        veniam quidem ratione voluptatem ipsum inventore ea nobis, consectetur
-        cumque ullam voluptas. Quibusdam, officia enim illum non reprehenderit
-        velit exercitationem!
-      </h1>
-      <h2>Probando esto</h2>
-      <p class="bg-blue text-2xl text-blue-800">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
-        laudantium, delectus, suscipit non fugiat ducimus ad officiis,
-        reprehenderit repellendus repudiandae eveniet officia in tempore quos
-        libero amet! Amet, tempora porro!
-      </p>
+      <div class="flex-grow flex bg-gray-200 p-5">
+        <div>
+          <h1 class="text-3xl font-bold">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+            molestias voluptatum animi quisquam nobis minima, accusantium
+            repudiandae saepe esse tenetur ea aliquam dolore sunt culpa sed non
+            accusamus doloribus hic.
+          </h1>
+        </div>
+        <div class="flex-none w-96 flex flex-col">
+          <div
+            class="bg-gray-800 text-gray-50 flex flex-col justify-center items-center p-3 mb-3"
+          >
+            <p class="text-4xl mb-3">TOTAL</p>
+            <p class="text-6xl m">$ 1245,00</p>
+          </div>
+          <button class="bg-red-800 text-gray-50 py-3 uppercase mb-3">
+            Cobrar e imprimir
+          </button>
+          <button class="bg-green-600 text-gray-50 py-3 uppercase">
+            Cobrar e imprimir
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
